@@ -62,4 +62,7 @@ A variable can be created in the following ways:
 - `*=`: `item1 *= item2` performs the same as `item1 = item1 * item2`
 - `/=`: `item1 /= item2` performs the same as `item1 = item1 / item2`
 
+## Increment & Decrement Operators
+- `++` 
+- `--` 
 
