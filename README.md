@@ -31,3 +31,11 @@ Similar to Java, JavaScript concatenates data types with the use of the `+` oper
 Each data has specific properties that are passed down to each instance. Such properties are accessible with the dot operator (`.`).
 e.g. `'Hello World!'.length` returns `11`.
 
+## Methods
+Similar to properties, each data has specific methods that can be performed. These methods are characterized by 3 features: 
+1. a period (the dot operator, `.`)
+2. the name of the method 
+3. opening & closing parentheses 
+4. arguments (optional - some methods don't require arguments)
+
+
