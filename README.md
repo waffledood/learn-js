@@ -17,3 +17,10 @@ A personal repository to collate my learnings for JavaScript
 - Object
   Collections of related data.
 
+## Arithmetic Operators 
+- Add: `+`
+- Subtract: `-`
+- Multiply: `*`
+- Divide: `/`
+- Remainder/Modulo: `%`
+
