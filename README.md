@@ -38,4 +38,7 @@ Similar to properties, each data has specific methods that can be performed. The
 3. opening & closing parentheses 
 4. arguments (optional - some methods don't require arguments)
 
+## Built-In Objects 
+In addition to console, there are other additional objects built into JavaScript. 
+These include the `Math`, `Integer`, ... libraries.
 
