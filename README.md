@@ -66,3 +66,13 @@ A variable can be created in the following ways:
 - `++` 
 - `--` 
 
+## String Interpolation (ES6)
+In the ES6 version of JavaScript, we can insert, ot _interpolate_, variables into strings using template literals (Similar to `f-strings` in Python).
+```js
+let myPet = 'cat';
+console.log(`I own a pet ${myPet}.`);
+```
+Note these important characteristics:
+- A template literal uses backticks ```, not quotation marks `"`!
+- Placeholders are used inside the template literal & resemble `${myPet}`
+
