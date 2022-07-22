@@ -27,3 +27,7 @@ A personal repository to collate my learnings for JavaScript
 ## String Concatenation 
 Similar to Java, JavaScript concatenates data types with the use of the `+` operator. Do note however that since Strings in JavaScript can be represented by enclosing `"`s or `'`s, we can concatenate Strings with `"` or `'` (similarly to Python).
 
+## Properties 
+Each data has specific properties that are passed down to each instance. Such properties are accessible with the dot operator (`.`).
+e.g. `'Hello World!'.length` returns `11`.
+
