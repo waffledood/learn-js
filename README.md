@@ -76,3 +76,6 @@ Note these important characteristics:
 - A template literal uses backticks ```, not quotation marks `"`!
 - Placeholders are used inside the template literal & resemble `${myPet}`
 
+## `typeof` operator 
+The `typeof` operator checks the value of the data type.
+
