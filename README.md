@@ -42,3 +42,24 @@ Similar to properties, each data has specific methods that can be performed. The
 In addition to console, there are other additional objects built into JavaScript. 
 These include the `Math`, `Integer`, ... libraries.
 
+## Variables 
+Variables are containers for values. 
+A variable can be created in the following ways: 
+* Pre-ES6
+  - `var myName = 'Sam';` 
+* ES6
+  - `let myName = 'Sam';`
+    Note that the usage of `let` signals the variable _can_ be reassigned a different value!
+    In the event a variable isn't assigned at declaration, its default value will be `undefined`, as the example follows. 
+    `let myName;`
+  - `const myName = 'Sam';` 
+    The `const` keyword is short for constant & strictly defines a variable cannot be reassigned. Trying to reassign a `const` variable throws `TypeError`.
+    Additionally, `const` variables **MUST** be assigned a value when declared.
+
+## Mathematical Assignment Operators 
+- `+=`: `item1 += item2` performs the same as `item1 = item1 + item2`
+- `-=`: `item1 -= item2` performs the same as `item1 = item1 - item2`
+- `*=`: `item1 *= item2` performs the same as `item1 = item1 * item2`
+- `/=`: `item1 /= item2` performs the same as `item1 = item1 / item2`
+
+
