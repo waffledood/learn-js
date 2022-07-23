@@ -79,3 +79,96 @@ Note these important characteristics:
 ## `typeof` operator 
 The `typeof` operator checks the value of the data type.
 
+## Conditional Statements 
+
+### If statements 
+`if` statements in JavaScript are structured as follows: 
+```js
+if (/* conditional statements */) {
+  // code to execute if conditional statements evaluate to true
+}
+```
+
+### If-Else statements 
+`if-else` statements are structured as follows: 
+```js
+if (/* conditional statements */) {
+  // code to execute if conditional statements evaluate to true 
+} else {
+  // code to execute if conditional statements do not evaluate to true 
+}
+```
+
+### Comparison operators 
+- Less than: `<`
+- Greater than: `>`
+- Less than or equal to: `<=`
+- Greater than or equal to: `>=`
+- Is equal to: `===`
+- Is not equal to: `!==`
+
+### Logical operators 
+- and operator: `&&`
+- or operator: `||`
+- not operator, otherwise known as the bang operator: `!`
+
+### Truthy & Falsy
+In cases of non-boolean data types, we sometimes want to check if a variable exists & not necessarily if the variable is equals to a specific value.
+A variable is _truthy_ if it has been assigned a non-falsy value.
+A list of falsy values are:
+- `0`
+- Empty strings like `""` or `''`
+- `null` which represent when there is no value at all
+- `undefined` which represent when a declared variable lacks a value
+- `NaN`, or Not a Number
+
+### Truthy & Falsy Assignment (Short-Circuit Evaluation)
+An example of utilizing truthy & falsy assignment is setting up a personalized greeting. The bottom example shows a way of doing it.
+```js
+let username = '';
+let defaultName;
+ 
+if (username) {
+  defaultName = username;
+} else {
+  defaultName = 'Stranger';
+}
+ 
+console.log(defaultName); // Prints: Stranger
+```
+Although this approach is correct, we can utilize **short-circuit evaluation** to further reduce the number of lines of code.
+```js
+let username = '';
+let defaultName = username || 'Stranger';
+ 
+console.log(defaultName); // Prints: Stranger
+```
+Because || or statements check the left-hand condition first, the variable defaultName will be assigned the actual value of username if it is truthy, and it will be assigned the value of 'Stranger' if username is falsy.
+
+### Ternary Operators 
+if-else statements can be condensed into a ternary operator 
+`statementToEvaluate ? codeToExecuteIfTrue : codeToExecuteIfFalse ;`
+
+### Switch Statements
+```js
+let groceryItem = 'papaya';
+ 
+switch (groceryItem) {
+  case 'tomato':
+    console.log('Tomatoes are $0.49');
+    break;
+  case 'lime':
+    console.log('Limes are $1.49');
+    break;
+  case 'papaya':
+    console.log('Papayas are $1.29');
+    break;
+  default:
+    console.log('Invalid item');
+    break;
+}
+ 
+// Prints 'Papayas are $1.29'
+```
+
+
