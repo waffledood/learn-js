@@ -145,3 +145,8 @@ console.log(defaultName); // Prints: Stranger
 ```
 Because || or statements check the left-hand condition first, the variable defaultName will be assigned the actual value of username if it is truthy, and it will be assigned the value of 'Stranger' if username is falsy.
 
+### Ternary Operators 
+if-else statements can be condensed into a ternary operator 
+`statementToEvaluate ? codeToExecuteIfTrue : codeToExecuteIfFalse ;`
+
+
