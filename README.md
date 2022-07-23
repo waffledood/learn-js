@@ -121,3 +121,27 @@ A list of falsy values are:
 - `null` which represent when there is no value at all
 - `undefined` which represent when a declared variable lacks a value
 - `NaN`, or Not a Number
+
+### Truthy & Falsy Assignment (Short-Circuit Evaluation)
+An example of utilizing truthy & falsy assignment is setting up a personalized greeting. The bottom example shows a way of doing it.
+```js
+let username = '';
+let defaultName;
+ 
+if (username) {
+  defaultName = username;
+} else {
+  defaultName = 'Stranger';
+}
+ 
+console.log(defaultName); // Prints: Stranger
+```
+Although this approach is correct, we can utilize **short-circuit evaluation** to further reduce the number of lines of code.
+```js
+let username = '';
+let defaultName = username || 'Stranger';
+ 
+console.log(defaultName); // Prints: Stranger
+```
+Because || or statements check the left-hand condition first, the variable defaultName will be assigned the actual value of username if it is truthy, and it will be assigned the value of 'Stranger' if username is falsy.
+
