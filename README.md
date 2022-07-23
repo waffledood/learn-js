@@ -79,3 +79,22 @@ Note these important characteristics:
 ## `typeof` operator 
 The `typeof` operator checks the value of the data type.
 
+## Conditional Statements 
+
+### if statements 
+`if` statements in JavaScript are structured as follows: 
+```js
+if (/* conditional statements */) {
+  // code to execute if conditional statements evaluate to true
+}
+```
+
+### if-else statements 
+`if-else` statements are structured as follows: 
+```js
+if (/* conditional statements */) {
+  // code to execute if conditional statements evaluate to true 
+} else {
+  // code to execute if conditional statements do not evaluate to true 
+}
+
