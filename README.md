@@ -81,7 +81,7 @@ The `typeof` operator checks the value of the data type.
 
 ## Conditional Statements 
 
-### if statements 
+### If statements 
 `if` statements in JavaScript are structured as follows: 
 ```js
 if (/* conditional statements */) {
@@ -89,7 +89,7 @@ if (/* conditional statements */) {
 }
 ```
 
-### if-else statements 
+### If-Else statements 
 `if-else` statements are structured as follows: 
 ```js
 if (/* conditional statements */) {
@@ -97,4 +97,27 @@ if (/* conditional statements */) {
 } else {
   // code to execute if conditional statements do not evaluate to true 
 }
+```
 
+### Comparison operators 
+- Less than: `<`
+- Greater than: `>`
+- Less than or equal to: `<=`
+- Greater than or equal to: `>=`
+- Is equal to: `===`
+- Is not equal to: `!==`
+
+### Logical operators 
+- and operator: `&&`
+- or operator: `||`
+- not operator, otherwise known as the bang operator: `!`
+
+### Truthy & Falsy
+In cases of non-boolean data types, we sometimes want to check if a variable exists & not necessarily if the variable is equals to a specific value.
+A variable is _truthy_ if it has been assigned a non-falsy value.
+A list of falsy values are:
+- `0`
+- Empty strings like `""` or `''`
+- `null` which represent when there is no value at all
+- `undefined` which represent when a declared variable lacks a value
+- `NaN`, or Not a Number
