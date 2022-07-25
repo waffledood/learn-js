@@ -221,3 +221,13 @@ greeting()        // Output: Hello, stranger!
 
 As per the code block above, when no argument is passed into the function, the default value (in this case `stranger`) is used. But if an argument is used, then the argument's value will be used.
 
+### Return 
+In previous sections, functions were not defined to return a value. By default, the resulting value of calling a function is `undefined`. Functions can return a specific value by defining it as such: 
+
+```js
+function calculateArea(height, width) {
+  let area = height * width;
+  return area;
+}
+```
+
