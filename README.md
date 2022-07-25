@@ -197,3 +197,13 @@ The control flow for a function call is pictured in the diagram below.
 
 Note that writing a function merely declares the existence of the function but doesn't execute it!
 
+### Parameters and Arguments 
+
+**Parameters** of a function are defined when the function is declared.
+
+![function_parameters](docs/function_parameters.svg)
+
+But **arguments** are the values passed into the function when the function is called. 
+
+![by_value](docs/by_value.svg)
+
