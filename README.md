@@ -253,3 +253,13 @@ calculatePerimeter(3.1, 5.3);
 
 Note: 
 - function expressions are not hoisted so they cannot be called before they are defined
+
+### Arrow Functions
+
+ES6 introduced arrow function syntax, a shorter way to write functions by using the special “fat arrow” () => notation.
+
+```js
+const sayGreetings = (designation, name) => {
+  console.log(`Good Morning ${designation} ${name}!`);
+}
+```
