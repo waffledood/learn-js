@@ -171,4 +171,29 @@ switch (groceryItem) {
 // Prints 'Papayas are $1.29'
 ```
 
+## Functions 
+In JavaScript, there are many ways to create a JavaScript function. One way is to use a _function declaration_. 
+
+### Function Declaration 
+
+![function_declaration](docs/function_declaration.svg)
+
+```js
+greetWorld();
+
+function greetWorld() {
+  console.log('Hello, World!');
+}
+```
+
+Note: 
+- In the code sample above, the function `greetWorld()` was called before the function was declared. This is _hoisting_. Note that this isn't **best practice**. Read more [here](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting).
+
+### Calling a Function 
+
+The control flow for a function call is pictured in the diagram below. 
+
+![function_call](docs/function_execution.svg)
+
+Note that writing a function merely declares the existence of the function but doesn't execute it!
 
