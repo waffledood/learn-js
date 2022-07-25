@@ -207,3 +207,17 @@ But **arguments** are the values passed into the function when the function is c
 
 ![by_value](docs/by_value.svg)
 
+### Default Parameters 
+One of the features added in ES6 is the ability to use default parameters. Default parameters allow parameters to have a predetermined value in case there is no argument passed into the function or if the argument is undefined when called. 
+
+```js
+function greeting (name = 'stranger') {
+  console.log(`Hello, ${name}!`)
+}
+ 
+greeting('Nick')  // Output: Hello, Nick!
+greeting()        // Output: Hello, stranger!
+```
+
+As per the code block above, when no argument is passed into the function, the default value (in this case `stranger`) is used. But if an argument is used, then the argument's value will be used.
+
