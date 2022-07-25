@@ -197,3 +197,59 @@ The control flow for a function call is pictured in the diagram below.
 
 Note that writing a function merely declares the existence of the function but doesn't execute it!
 
+### Parameters and Arguments 
+
+**Parameters** of a function are defined when the function is declared.
+
+![function_parameters](docs/function_parameters.svg)
+
+But **arguments** are the values passed into the function when the function is called. 
+
+![by_value](docs/by_value.svg)
+
+### Default Parameters 
+One of the features added in ES6 is the ability to use default parameters. Default parameters allow parameters to have a predetermined value in case there is no argument passed into the function or if the argument is undefined when called. 
+
+```js
+function greeting (name = 'stranger') {
+  console.log(`Hello, ${name}!`)
+}
+ 
+greeting('Nick')  // Output: Hello, Nick!
+greeting()        // Output: Hello, stranger!
+```
+
+As per the code block above, when no argument is passed into the function, the default value (in this case `stranger`) is used. But if an argument is used, then the argument's value will be used.
+
+### Return 
+In previous sections, functions were not defined to return a value. By default, the resulting value of calling a function is `undefined`. Functions can return a specific value by defining it as such: 
+
+```js
+function calculateArea(height, width) {
+  let area = height * width;
+  return area;
+}
+```
+
+### Function Expressions 
+
+Another way to define a function is to use a function expression. To define a function inside an expression, we can use the `function` keyword. Note that in a function expression, the function name is usually omitted. A function with no name is called an anonymous function. A function expression is often stored in a variable in order to refer to it.
+
+![function_expression](docs/function_expression.svg)
+
+To declare a function expression:
+- Declare a variable to make the variable’s name be the name, or identifier, of your function. Since the release of ES6, it is common practice to use const as the keyword to declare the variable.
+- Assign as that variable’s value an anonymous function created by using the function keyword followed by a set of parentheses with possible parameters. Then a set of curly braces that contain the function body.
+
+> To invoke a function expression, write the name of the variable in which the function is stored followed by parentheses enclosing any arguments being passed into the function.
+
+```js
+const calculatePerimeter = function(length, breadth) {
+  return 2 * (length + breadth);
+}
+
+calculatePerimeter(3.1, 5.3);
+```
+
+Note: 
+- function expressions are not hoisted so they cannot be called before they are defined
