@@ -263,3 +263,23 @@ const sayGreetings = (designation, name) => {
   console.log(`Good Morning ${designation} ${name}!`);
 }
 ```
+
+### Concise Arrow Functions 
+
+JavaScript also provides several ways to refactor arrow function syntax. The most condensed form of the function is known as concise body.
+
+1. Functions that take only a single parameter do not need that parameter to be enclosed in parentheses. However, if a function takes zero or multiple parameters, parentheses are required.
+   ![concise_1](docs/concise_1.svg)
+2. A function body composed of a single-line block does not need curly braces. Without the curly braces, whatever that line evaluates will be automatically returned. The contents of the block should immediately follow the arrow => and the return keyword can be removed. This is referred to as implicit return.
+   ![concise_2](docs/concise_2.svg) 
+
+Note the following refactor below:
+
+```js
+const calculateArea = (length) => {
+  let area = length * length;
+  return area;
+}
+
+const calculateArea = length => length * length;
+```
