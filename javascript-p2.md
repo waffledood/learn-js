@@ -22,3 +22,13 @@ array2 = ['kiwi', 'almond']         // not allowed!
 Note:
 - In JavaScript, declaring an array with the keyword `const` means that variable will always be holding an array of a certain size (size of the array it was declared with) throughout its lifetime.
 
+### `.length` property of arrays
+
+We can use the `.length` property to find out the length of arrays.
+
+```js
+let array1 = [1, 2, 3, 4, 5];
+console.log(array1.length);
+```
+
+
