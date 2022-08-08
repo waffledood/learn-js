@@ -31,4 +31,11 @@ let array1 = [1, 2, 3, 4, 5];
 console.log(array1.length);
 ```
 
+### Array Operations 
 
+1. `push(item)`
+   - Appends an item to the end of the array.
+2. `pop()`
+   - Removes the last item of the array. 
+
+Further details on Array operations can be found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
