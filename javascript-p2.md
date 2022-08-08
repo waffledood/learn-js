@@ -114,3 +114,12 @@ do {
     // do something 
 } while (/* conditional statement */);
 ```
+
+## Other useful statements & declarations / control flow logic
+
+- `break`
+  terminates the current loop, switch, or label statement and transfers program control to the statement following the terminated statement
+- `continue`
+  terminates the current execution & goes to the next iteration
+
+Source: [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)
