@@ -45,3 +45,14 @@ Further details on Array operations can be found [here](https://developer.mozill
 Similar to Python, JavaScript arrays can store different data types in an array. These means string, arrays, integers can all reside within the same array.
 
 `const sampleArray = ['waffles', 123, ['pancakes', 'maple syrup'], 2.43];`
+
+## For Loops 
+
+For Loops help us iterate over an array, or repeat the same block of code over & over again. 
+
+```js
+for (let i = 0; i < 4; i++) {
+    // do something
+}
+```
+
