@@ -39,3 +39,9 @@ console.log(array1.length);
    - Removes the last item of the array. 
 
 Further details on Array operations can be found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
+
+### Data Type of Arrays
+
+Similar to Python, JavaScript arrays can store different data types in an array. These means string, arrays, integers can all reside within the same array.
+
+`const sampleArray = ['waffles', 123, ['pancakes', 'maple syrup'], 2.43];`
