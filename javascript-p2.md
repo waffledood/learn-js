@@ -56,6 +56,28 @@ for (let i = 0; i < 4; i++) {
 }
 ```
 
+## For-Of Loops 
+
+A permutation of the For Loop is the For-Of Loop. This is similar to Java's `for-each` loop.
+
+```js
+const hobbies = ['singing', 'eating', 'quidditch', 'writing'];
+ 
+for (const hobby of hobbies) {
+  console.log(`I enjoy ${hobby}.`);
+}
+```
+
+Java's `for-each` loop looks like this:
+
+```java
+int[] arr = new int[] {1, 2, 3, 4, 5};
+
+for (int i: arr) {
+    System.out.println("item: " + i);
+}
+```
+
 ## While Loops 
 
 While Loops help us iterate over a block of code as long as a conditional statement is met. 
