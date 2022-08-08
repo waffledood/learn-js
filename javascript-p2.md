@@ -56,3 +56,13 @@ for (let i = 0; i < 4; i++) {
 }
 ```
 
+## While Loops 
+
+While Loops help us iterate over a block of code as long as a conditional statement is met. 
+
+```js
+while (/* conditional statement */) {
+    // do something
+}
+```
+
