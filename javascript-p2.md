@@ -66,3 +66,13 @@ while (/* conditional statement */) {
 }
 ```
 
+## Do-While Loops 
+
+Do-While Loops **execute a block of code once**, before repeatedly executing that block of code as long as a conditional statement is met.
+
+```js
+do {
+    // do something 
+} while (/* conditional statement */);
+```
+
