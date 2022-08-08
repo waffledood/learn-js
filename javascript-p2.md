@@ -68,6 +68,23 @@ for (const hobby of hobbies) {
 }
 ```
 
+JavaScript's `for-of` loop can be used to iterate through characters of a String.
+
+```js
+const username = 'joe';
+ 
+for (const char of username) {
+  console.log(char);
+}
+
+/*
+    The above prints:
+    j
+    o
+    e
+*/
+```
+
 Java's `for-each` loop looks like this:
 
 ```java
@@ -97,4 +114,3 @@ do {
     // do something 
 } while (/* conditional statement */);
 ```
-
