@@ -123,3 +123,18 @@ do {
   terminates the current execution & goes to the next iteration
 
 Source: [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)
+
+## Objects 
+
+Objects can be assigned to variables just like any JavaScript type. We use curly braces, {}, to designate an object literal:
+
+`let spaceShip = {}; // spaceShip is an empty object literal`
+
+We fill an object with unordered data. This data is organized into key-value pairs.
+
+We make a key-value pair by writing the key’s name, or identifier, followed by a colon and then the value. We separate each key-value pair in an object literal with a comma (,). Keys are strings, but when we have a key that does not have any special characters in it, JavaScript allows us to omit the quotation marks:
+
+![objectliteraldiagram](docs/js-p2/objectliteraldiagram.svg)
+
+
+
