@@ -235,3 +235,37 @@ let spaceShip = {
   }
 }
 ```
+
+## Nested Objects 
+
+We can take Objects to another level, by nesting them inside of one another! This allows us to create objects with complex properties & behaviors.
+
+```js
+const spaceship = {
+     telescope: {
+        yearBuilt: 2018,
+        model: '91031-XLT',
+        focalLength: 2032 
+     },
+    crew: {
+        captain: { 
+            name: 'Sandra', 
+            degree: 'Computer Engineering', 
+            encourageTeam() { console.log('We got this!') } 
+         }
+    },
+    engine: {
+        model: 'Nimbus2000'
+     },
+     nanoelectronics: {
+         computer: {
+            terabytes: 100,
+            monitors: 'HD'
+         },
+        'back-up': {
+           battery: 'Lithium',
+           terabytes: 50
+         }
+    }
+}; 
+```
