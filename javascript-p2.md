@@ -220,3 +220,18 @@ const spaceship = {
  
 delete spaceship.mission;  // Removes the mission property
 ```
+
+### Methods
+
+Methods for objects can be created in the following manner:
+
+```js
+let spaceShip = {
+  takeOff() {
+    console.log('3...2...1...Launch!');
+  },
+  preFlightChecks() {
+    console.log('checking appartus... all clear!');
+  }
+}
+```
