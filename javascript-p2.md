@@ -305,6 +305,44 @@ When we passed spaceship into that function, `obj` became a reference to the mem
 The body of `tryReassignment()` has no knowledge of the spaceship variable at all!
 When we did the reassignment in the body of `tryReassignment()`, the obj variable came to refer to the memory location of the object `{'identified' : false, 'transport type' : 'flying'}`, while the `spaceship` variable was completely unchanged from its earlier value.
 
+### Using `For-Of` to iterate through objects 
+
+We can use a `For-Of` loop to iterate through objects, as the example code below shows.
+
+```js
+let spaceship = {
+    crew: {
+    captain: { 
+        name: 'Lily', 
+        degree: 'Computer Engineering', 
+        cheerTeam() { console.log('You got this!') } 
+        },
+    'chief officer': { 
+        name: 'Dan', 
+        degree: 'Aerospace Engineering', 
+        agree() { console.log('I agree, captain!') } 
+        },
+    medic: { 
+        name: 'Clementine', 
+        degree: 'Physics', 
+        announce() { console.log(`Jets on!`) } },
+    translator: {
+        name: 'Shauna', 
+        degree: 'Conservation Science', 
+        powerFuel() { console.log('The tank is full!') } 
+        }
+    }
+}; 
+
+// Write your code below
+for (let crewMemberRole in spaceship.crew) {
+  //console.log(`${crewMemberRole}: ${crewMemberRole.name}`);
+  console.log(`${crewMemberRole}: ${spaceship.crew[crewMemberRole].name}`);
+}
+```
+
+In the above example however, I was unable to retrieve the crew member's name from the iterator used in the `for` loop.
+
 
 ## Nested Objects 
 
