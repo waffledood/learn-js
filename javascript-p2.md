@@ -150,5 +150,7 @@ There are 2 ways we can access an object's property:
    spaceship.homePlanet; // Returns 'Earth'
    spaceship.color; // Returns 'silver'
    ```
-2. 
+2. bracket notation `[]`
+   Note that we **have** to use bracket notation when accessing keys that have numbers, spaces, or special characters in them!
+   ![object_access_bracket](docs/js-p2/object_access_bracket.svg)
 
