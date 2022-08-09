@@ -140,6 +140,7 @@ We make a key-value pair by writing the key’s name, or identifier, followed by
 
 There are 2 ways we can access an object's property: 
 1. dot notation `.`
+
    ![object_dot_notation](docs/js-p2/object_dot_notation.svg)
    We can access the property of an object by directly calling it with the dot operator:
    ```js
@@ -150,10 +151,15 @@ There are 2 ways we can access an object's property:
    spaceship.homePlanet; // Returns 'Earth'
    spaceship.color; // Returns 'silver'
    ```
+
 2. bracket notation `[]`
+
    Note that we **have** to use bracket notation when accessing keys that have numbers, spaces, or special characters in them!
+
    ![object_access_bracket](docs/js-p2/object_access_bracket.svg)
-   Another note: The 
+
+   Another note: The example below shows how using bracket notation & dot notation to access an object's property can lead to very different outcomes!
+
     <table>
       <tr>
       <th>Dot Operator</th>
