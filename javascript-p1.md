@@ -8,7 +8,7 @@
 - Boolean (Primitive)
   boolean values are only ever 1 of 2 values (`true`, `false`)
 - Null (Primitive)
-  this data type represents the intentional absnce of a value, and is represented by the keyword `null` (without quotes!)
+  this data type represents the intentional absence of a value, and is represented by the keyword `null` (without quotes!)
 - Undefined (Primitive)
   this data type is denoted by the keyword `undefined` (without quotes). It also represents the absence of a value although it has a different use than `null`. `undefined` means that a given value does not exist
 - Symbol (Primitive)
