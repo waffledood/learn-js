@@ -153,4 +153,32 @@ There are 2 ways we can access an object's property:
 2. bracket notation `[]`
    Note that we **have** to use bracket notation when accessing keys that have numbers, spaces, or special characters in them!
    ![object_access_bracket](docs/js-p2/object_access_bracket.svg)
+   Another note: The 
+    <table>
+      <tr>
+      <th>Dot Operator</th>
+      <th>Bracket Notation</th>
+      </tr>
+      <tr>
+      <td>
+        
+      ```js
+      let returnAnyProp = (objectName, propName) => objectName[propName];
+      ```
+        
+      </td>
+      <td>
+
+      ```js
+      let returnAnyProp = (objectName, propName) => objectName.propName;
+      ```
+
+      </td>
+      </tr>
+      <tr>
+      <td>The `returnAnyProp` function accesses the `propName` property of the object `objectName`, meaning `objectName` has a property with same name as the value stored in `propName`.</td>
+      <td>The `returnAnyProp` function accesses the literal `propName` property of the object `objectName`, meaning `objectName` has a property named `propName`.</td>
+      </tr>
+    </table>
+
 
