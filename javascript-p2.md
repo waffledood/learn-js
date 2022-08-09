@@ -136,5 +136,19 @@ We make a key-value pair by writing the key’s name, or identifier, followed by
 
 ![objectliteraldiagram](docs/js-p2/objectliteraldiagram.svg)
 
+### Accessing Properties 
 
+There are 2 ways we can access an object's property: 
+1. dot notation `.`
+   ![object_dot_notation](docs/js-p2/object_dot_notation.svg)
+   We can access the property of an object by directly calling it with the dot operator:
+   ```js
+   let spaceShip = {
+      homePlanet: 'Earth',
+      color: 'silver'
+   }
+   spaceship.homePlanet; // Returns 'Earth'
+   spaceship.color; // Returns 'silver'
+   ```
+2. 
 
