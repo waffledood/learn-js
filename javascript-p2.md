@@ -236,6 +236,22 @@ let spaceShip = {
 }
 ```
 
+### Creating an array of objects
+
+We can create an array of objects the following way:
+
+```js
+let arrayOfObjects = [{name: 'Sam', age: 30}, 
+                      {name: 'Bob', age: 41}]
+```
+
+I had tried to incorrectly create an object with the following way:
+
+```js
+let arrayOfObjects = [sam: {name: 'Sam', age: 30}, 
+                      bob: {name: 'Bob', age: 41}]
+```
+
 ## Nested Objects 
 
 We can take Objects to another level, by nesting them inside of one another! This allows us to create objects with complex properties & behaviors.
