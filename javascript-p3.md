@@ -97,3 +97,51 @@ goat.diet();
 
 The `this` keyword references the calling object which provides access to the calling object’s properties. In the example above, the calling object is goat and by using `this` we’re accessing the goat object itself, and then the `dietType` property of `goat` by using property dot notation.
 
+
+### Arrow Functions & `this`
+
+The `this` keyword doesn't work the same way when an arrow function is used to define object methods. Refer to below example.
+
+```js
+const goat = {
+  dietType: 'herbivore',
+  makeSound() {
+    console.log('baaa');
+  },
+  diet: () => {
+    console.log(this.dietType);
+  }
+};
+ 
+goat.diet(); // Prints undefined
+```
+
+In the comment, you can see that `goat.diet()` would log undefined. So what happened? Notice that the `.diet()` method is defined using an arrow function.
+
+Arrow functions inherently bind, or tie, an already defined `this` value to the function itself that is NOT the calling object. In the code snippet above, the value of `this` is the global object, or an object that exists in the global scope, which doesn’t have a `dietType` property and therefore returns `undefined`.
+
+To read more about either arrow functions or the global object check out the MDN documentation of the [global object](https://developer.mozilla.org/en-US/docs/Glossary/Global_object) and [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
+
+Note:
+- You **can't** use `this` keywords in arrow functions! Because arrow functions inherently have `this` tied to the function itself. Omitting the `this` keyword will still yield an error, if the user intends to refer to an internal variable of the object.
+  Instead, resort to the longhand format or ES6 shorthand format.
+* ES6 shorthand format
+  ```js
+  const goat = {
+    name: 'Billy',
+    color: 'biege',
+    giveDetails(){
+        console.log(`${this.name} is a ${this.color} goat.`)
+    }
+  }
+  ```
+* longhand format
+  ```js
+  const goat = {
+    name: 'Billy',
+    color: 'biege',
+    giveDetails: function() {
+        console.log(`${this.name} is a ${this.color} goat.`)
+    }
+  }
+  ```
