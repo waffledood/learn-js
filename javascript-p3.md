@@ -159,3 +159,35 @@ const bankAccount = {
 In the example above, the _amount is not intended to be directly manipulated, even so, it is still possible to reassign `_amount`:
 
 `bankAccount._amount = 1000000;`
+
+### Getter methods
+
+In JavaScript, getter methods are defined in the following manner:
+
+```js
+const person = {
+  _firstName: 'John',
+  _lastName: 'Doe',
+  get fullName() {
+    if (this._firstName && this._lastName){
+      return `${this._firstName} ${this._lastName}`;
+    } else {
+      return 'Missing a first name or a last name.';
+    }
+  }
+}
+ 
+// To call the getter method: 
+person.fullName; // 'John Doe'
+```
+
+A few things to note about getter methods in JavaScript:
+- Getter methods are prepended with the `get` keyword
+- We can access the calling object’s internal properties using `this`
+- In the last line we call `fullName` on person. In general, getter methods do not need to be called with a set of parentheses. Syntactically, it looks like we’re accessing a property.
+
+Some advantages of using getter methods:
+- Getters can perform an action on the data when getting a property.
+- In a getter, we can access the properties of the calling object using `this`.
+- The functionality of our code is easier for other developers to understand.
+
