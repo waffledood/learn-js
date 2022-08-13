@@ -1,4 +1,4 @@
-# JavaScript Syntax - Part 2
+# JavaScript Syntax - Part 3
 
 ## Advanced Objects 
 
