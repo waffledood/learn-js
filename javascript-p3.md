@@ -145,3 +145,17 @@ Note:
     }
   }
   ```
+
+### Privacy in Objects
+
+Although certain languages have privacy built-in for objects, JavaScript does not have this feature. Rather, JavaScript developers follow naming conventions that signal to other developers how to interact with a property. One common convention is to place an underscore `_` before the name of a property to mean that the property should not be altered. Here’s an example of using `_` to prepend a property.
+
+```js
+const bankAccount = {
+  _amount: 1000
+}
+```
+
+In the example above, the _amount is not intended to be directly manipulated, even so, it is still possible to reassign `_amount`:
+
+`bankAccount._amount = 1000000;`
