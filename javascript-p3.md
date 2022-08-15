@@ -183,7 +183,7 @@ person.fullName; // 'John Doe'
 
 A few things to note about getter methods in JavaScript:
 - Getter methods are prepended with the `get` keyword
-- We can access the calling object’s internal properties using `this`
+- Getter methods can access the calling object’s internal properties using `this`
 - In the last line we call `fullName` on person. In general, getter methods do not need to be called with a set of parentheses. Syntactically, it looks like we’re accessing a property.
 
 Some advantages of using getter methods:
@@ -191,3 +191,25 @@ Some advantages of using getter methods:
 - In a getter, we can access the properties of the calling object using `this`.
 - The functionality of our code is easier for other developers to understand.
 
+
+### Setter Methods
+
+In JavaScript, setter methods are defined in the following manner:
+
+```js
+const person = {
+  _age: 37,
+  set age(newAge){
+    if (typeof newAge === 'number'){
+      this._age = newAge;
+    } else {
+      console.log('You must assign a number to age');
+    }
+  }
+};
+```
+
+A few things to note about setter methods in JavaScript:
+- Setter methods are prepended with the `set` keyword
+- Setter methods can access the calling object's internal properties using `this`
+- Also similar to getter methods, setter methods do not need to be called with a set of parentheses. 
