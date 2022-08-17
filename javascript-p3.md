@@ -235,3 +235,18 @@ const monsterFactory = (name, age, energySource, catchPhrase) => {
 
 The `monsterFactory` function above returns an object with 4 properties: `name`, `age`, `energySource`, and `scare()`.
 
+### Property Value Shorthand
+
+ES6 introduced some new shortcuts for assigning properties to variables known as _destructuring_.
+
+In the previous sub-section, we manually assigned the parameters of the function to the properties of the object we were returning. Instead, we can use _destructuring_ to save us some typing! 
+
+```js
+const monsterFactory = (name, age) => {
+  return { 
+    name,
+    age 
+  }
+};
+```
+
