@@ -215,3 +215,23 @@ A few things to note about setter methods in JavaScript:
 - Setter methods can access the calling object's internal properties using `this`
 - Also similar to getter methods, setter methods do not need to be called with a set of parentheses. 
 - Avoid naming getter & setter methods the same as object's variables, as calling the getter/setter method will instead call the getter/setter method instead of the object's variable & result in an infinite recursive call.
+
+### Factory Functions
+
+Factory functions are essentially constructors, that allow you to create an object of a specific type. A factory function is written in the following manner in JavaScript: 
+
+```js
+const monsterFactory = (name, age, energySource, catchPhrase) => {
+  return { 
+    name: name,
+    age: age, 
+    energySource: energySource,
+    scare() {
+      console.log(catchPhrase);
+    } 
+  }
+};
+```
+
+The `monsterFactory` function above returns an object with 4 properties: `name`, `age`, `energySource`, and `scare()`.
+
