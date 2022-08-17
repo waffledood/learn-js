@@ -250,3 +250,28 @@ const monsterFactory = (name, age) => {
 };
 ```
 
+### Destructured Assignment
+
+In cases where we'd want to extract key-value pairs from objects and save them as variables, we might do the following: 
+
+```js
+const vampire = {
+  name: 'Dracula',
+  residence: 'Transylvania',
+  preferences: {
+    day: 'stay inside',
+    night: 'satisfy appetite'
+  }
+};
+
+const residence = vampire.residence; 
+console.log(residence); // Prints 'Transylvania' 
+```
+
+However, we can also take advantage of a destructuring technique called _destructured assignment_ to save ourselves some keystrokes. In destructured assignment we create a variable with the name of an object’s key that is wrapped in curly braces { } and assign to it the object, as follows: 
+
+```js
+const { residence } = vampire; 
+console.log(residence); // Prints 'Transylvania'
+```
+
