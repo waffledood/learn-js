@@ -316,3 +316,45 @@ func.name;                    // returns 'aReallyLongFunctionName'
 
 Further documentation on the methods & properties of functions can be found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function).
 
+
+### Functions as Parameters 
+
+A higher-order function is a function that either accepts functions as parameters, returns a function or both! We call functions that get passed in as arguments _callback functions_. _Callback functions_ get invoked during the execution of the higher-order function. 
+
+When we invoke a higher-order function, and pass another function in as an argument, we don’t invoke the argument function. Invoking it would evaluate to passing in the return value of that function call. With callback functions, we pass in the function itself by typing the function name without the parentheses:
+
+```js
+const higherOrderFunc = param => {
+  param();
+  return `I just invoked ${param.name} as a callback function!`
+}
+ 
+const anotherFunc = () => {
+  return 'I\'m being invoked by the higher-order function!';
+}
+ 
+higherOrderFunc(anotherFunc);
+```
+
+Notice how we pass in `anotherFunc` simply as `anotherFunc`, instead of `anotherFunc()`. Because writing `anotherFunc()` invokes the `anotherFunc` function & passes in the output of `anotherFunc` as an argument into `higherOrderFunc`. 
+
+Below are further examples to highlight how higher-order functions can be used.
+
+```js
+const addTwo = num => {
+  return num + 2;
+}
+
+const checkConsistentOutput = (func, val) => {
+  let checkA = val + 2;
+  let checkB = func(val);
+
+  if (checkA === checkB) {
+    return checkB;
+  } else {
+    return 'inconsistent results';
+  }
+}
+
+console.log(checkConsistentOutput(addTwo, 2));
+```
