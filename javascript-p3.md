@@ -282,5 +282,37 @@ Although we can define methods for custom objects, objects inherit several in-bu
 
 ## Higher-Order Functions 
 
+### Functions as Data 
 
+JavaScript functions behave like any other data type in the language; we can assign functions to variables, and we can reassign them to new variables.
+
+For instance, we have the following function & we assign it to a variable: 
+
+```js
+const aReallyLongFunctionName = function(num) {
+  let val = 2 + num;
+  console.log(`The value is ${val}`);
+}
+
+const func =  aReallyLongFunctionName;
+```
+
+In the example above, we might have wanted to assign the function to a variable with a suitably shorter name, for ease of use (function calls). With the new variable, we can make function calls similar to how we did before!
+
+```js
+aReallyLongFunctionName(2); // returns 4
+func(2);                    // also returns 4!
+```
+
+Note:
+- We assign the **_function_** to a variable, **NOT** the **value returned** by the function!
+
+Since functions are a type of object, they also have properties such as `.name`, `.length` & methods such as `toString()`. Such methods might be particularly useful should we want to check or assert the properties of variables that have been assigned other functions.
+
+```js
+aReallyLongFunctionName.name; // returns 'aReallyLongFunctionName'
+func.name;                    // returns 'aReallyLongFunctionName'
+```
+
+Further documentation on the methods & properties of functions can be found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function).
 
