@@ -279,3 +279,8 @@ console.log(residence); // Prints 'Transylvania'
 
 Although we can define methods for custom objects, objects inherit several in-built methods from the parent `Object`. These methods can be found at the [official MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object).
 
+
+## Higher-Order Functions 
+
+
+
