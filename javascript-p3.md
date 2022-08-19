@@ -361,5 +361,5 @@ console.log(checkConsistentOutput(addTwo, 2));
 
 ## Iterators 
 
-
+Iterators, or iteration methods are in-built JavaScript array methods that help us iterate over arrays.
 
