@@ -387,4 +387,21 @@ There are several ways to pass in a callback function to `.forEach()`, either wr
    );
    ```
 
+### The `.map()` method
+
+Similar to `.forEach()` method, the `.map()` method executes the callback function on each array element but returns a new array!
+
+An example below:
+
+```js
+const bigNumbers = [100, 200, 300, 400, 500];
+
+const smallNumbers = bigNumbers.map(
+  function(number) {
+    return number / 100;
+  }
+);
+
+console.log(smallNumbers);  // prints [1, 2, 3, 4, 5]
+```
 
