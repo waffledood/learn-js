@@ -363,3 +363,28 @@ console.log(checkConsistentOutput(addTwo, 2));
 
 Iterators, or iteration methods are in-built JavaScript array methods that help us iterate over arrays.
 
+### The `.forEach()` method
+
+The `forEach()` method executes the provided function for each array element.
+
+Some notes about the `.forEach()` method: 
+- `.forEach()` takes an argument of a callback function. Remember, a callback function is a function passed as an argument into another function.
+- `.forEach()` loops through the array and executes the callback function for each element. During each execution, the current element is passed as an argument to the callback function.
+- The return value for `.forEach()` will always be `undefined`.
+
+There are several ways to pass in a callback function to `.forEach()`, either writing a function declaration, function expression or arrow function as an anonymous function inside `.forEach()` (as in Example 1 below), or declaring the function as a variable beforehand (Example 2).
+
+1. ```js
+   function printGrocery(element){
+     console.log(element);
+   }
+ 
+   groceries.forEach(printGrocery);
+   ```
+2. ```js
+   groceries.forEach(
+     groceryItem => console.log(groceryItem)
+   );
+   ```
+
+
