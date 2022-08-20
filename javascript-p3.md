@@ -414,7 +414,7 @@ An example below:
 const fruits = ['mango', 'kiwi', 'peach', 'apple']
 const fruitsWithLongNames = fruits.filter(
   fruit => {
-    fruit.length >= 5;
+    return fruit.length >= 5;
   }
 );
 
