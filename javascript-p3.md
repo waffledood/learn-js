@@ -405,3 +405,19 @@ const smallNumbers = bigNumbers.map(
 console.log(smallNumbers);  // prints [1, 2, 3, 4, 5]
 ```
 
+### The `.filter()` method
+
+The `.filter()` method is used to return a new array where its elements have been filtered from the original array. Usually a conditional statement(s) is used inside the callback function.
+
+An example below: 
+```js
+const fruits = ['mango', 'kiwi', 'peach', 'apple']
+const fruitsWithLongNames = fruits.filter(
+  fruit => {
+    fruit.length >= 5;
+  }
+);
+
+console.log(fruitsWithLongNames)  // prints ['mango', 'peach', 'apple']
+```
+
