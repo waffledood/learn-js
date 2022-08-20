@@ -421,3 +421,18 @@ const fruitsWithLongNames = fruits.filter(
 console.log(fruitsWithLongNames)  // prints ['mango', 'peach', 'apple']
 ```
 
+### The `.findIndex()` method 
+
+The `.findIndex()` method returns the index of the first element that evaluates to `true` in the callback function. In the event none of the array elements fulfill the condition(s) in the callback function, a value of `-1` is returned. 
+
+An example below:
+
+```js
+const items = ['car', 'cat', 'oven'];
+const itemThatStartWithC = items.findIndex(
+  item => {
+    return item.charAt(0) === 'c';
+  }
+)
+```
+
