@@ -436,3 +436,21 @@ const itemThatStartWithC = items.findIndex(
 )
 ```
 
+### The `.reduce()` method
+
+The `.reduce()` method is used to reduce an array to a single value.
+
+An example below: 
+
+```js
+const numbers = [1, 2, 3, 4, 5];
+
+const sumOfNumbers = numbers.reduce(
+  (accumulator, currentValue) => {
+    return accumulator + currentValue;
+  }
+);
+
+console.log(sumOfNumbers);  // Output: 17
+```
+
