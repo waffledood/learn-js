@@ -474,3 +474,5 @@ function sortSpeciesByTeeth(array) {
 }
 ```
 
+This solution was inspired by these StackOverflow posts: [post 1](https://stackoverflow.com/questions/46121420/es6-destructuring-two-objects-with-same-property-name) & [post 2](https://stackoverflow.com/questions/56266438/destructuring-same-name-properties-of-object-arguments-allow-many-instead-of-a).
+
