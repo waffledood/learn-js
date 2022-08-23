@@ -454,3 +454,23 @@ const sumOfNumbers = numbers.reduce(
 console.log(sumOfNumbers);  // Output: 17
 ```
 
+### Interesting use-cases of ES6 with Arrays
+
+The following are some interesting examples of ES6 in Arrays, where brevity of code (because of ES6's shortcuts) makes for easier-to-read & cleaner code (which I really like!).
+
+#### Using destructuring in Array methods
+
+In the following example, we want to sort `Species` objects in increasing order of their teeth number. ES6 allows us to destructure the object & access its variables in a single line, without having to write extra lines of code. 
+
+```js
+const speciesArray = [ {speciesName:'shark', numTeeth:50}, {speciesName:'dog', numTeeth:42}, {speciesName:'alligator', numTeeth:80}, {speciesName:'human', numTeeth:32}];
+
+function sortSpeciesByTeeth(array) {
+  return array.sort(
+    ({numTeeth: a}, {numTeeth: b}) => {
+      return a - b;
+    }
+  );
+}
+```
+
