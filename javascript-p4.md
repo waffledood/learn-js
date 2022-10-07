@@ -48,3 +48,28 @@ Following the previous usage of the `Dog` class.
 const halley = new Dog('Halley'); // this creates a new Dog instance
 ```
 
+### Methods 
+
+We can add methods (getters, setters, normal methods) to the class.
+
+```js
+class Dog {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+ 
+  get name() {
+    return this._name;
+  }
+ 
+  get behavior() {
+    return this._behavior;
+  }
+ 
+  incrementBehavior() {
+    this._behavior++;
+  }
+}
+```
+
