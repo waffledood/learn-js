@@ -73,3 +73,80 @@ class Dog {
 }
 ```
 
+### Inheritance 
+
+Objects in JavaScript can also exhibit inheritance.
+
+Child classes can extend parent classes in a manner similar to Java. The child classes will then inherit properties & methods from the parent class.
+
+```js
+class Child extends Parent {
+    // properties & methods inherited from Parent class
+    
+    // other properties & methods unique to Child class
+}
+```
+
+A simple example below highlights this.
+
+```js
+class Animal {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+ 
+  get name() {
+    return this._name;
+  }
+ 
+  get behavior() {
+    return this._behavior;
+  }
+ 
+  incrementBehavior() {
+    this._behavior++;
+  }
+} 
+```
+
+```js
+class Cat {
+  constructor(name, usesLitter) {
+    this._name = name;
+    this._behavior = 0;
+    this._usesLitter = usesLitter;
+  }
+ 
+  get name() {
+    return this._name;
+  }
+ 
+  get behavior() {
+    return this._behavior;
+  }
+
+  get usesLitter() {
+    return this._usesLitter;
+  }
+ 
+  incrementBehavior() {
+    this._behavior++;
+  }
+} 
+```
+
+We observe that the `Cat` class has similarities with the `Animal` class & in fact has additional properties & methods unique to the `Cat` class.
+
+We can then rewrite the `Cat` class as follows:
+
+```js
+class Cat extends Animal {
+  constructor(name, usesLitter) {
+    super(name);
+    this._usesLitter = usesLitter;
+  }
+}
+```
+
+
