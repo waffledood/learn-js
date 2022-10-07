@@ -38,4 +38,13 @@ class Dog {
 }
 ```
 
+### Class Instances 
+
+We can create instances of a particular class by calling the constructor method & setting the object returned by the constructor to a variable. 
+
+Following the previous usage of the `Dog` class.
+
+```js
+const halley = new Dog('Halley'); // this creates a new Dog instance
+```
 
