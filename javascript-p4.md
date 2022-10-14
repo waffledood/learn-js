@@ -149,4 +149,22 @@ class Cat extends Animal {
 }
 ```
 
+### Static Methods 
+
+There are instances when we want to have properties and/or methods that aren't available in individual instances but that you can call directly from the class. 
+
+```js
+class Animal {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+ 
+  static generateName() {
+    const names = ['Angel', 'Spike', 'Buffy', 'Willow', 'Tara'];
+    const randomNumber = Math.floor(Math.random()*5);
+    return names[randomNumber];
+  }
+} 
+```
 
