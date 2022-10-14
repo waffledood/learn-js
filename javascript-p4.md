@@ -168,3 +168,39 @@ class Animal {
 } 
 ```
 
+### Classes 
+
+In the case when a child class extends its parent class, there is a standard in which the `super()` constuctor is called inside the child's constructor.
+
+> ❗️ Error!
+> 
+> The following code block is wrong!
+> We cannot initialize the child's variables first, and then call the parent's constructor!
+
+```js
+class Child extendsParent {
+    constructor(a, b, c) {
+        this._c = c;
+        super(a, b);
+    }
+
+    // .. other methods
+}
+```
+
+> ✅ Correct!
+> 
+> The following code block is correct!
+> We first need to call the parent's constructor method, before initializing the child's variables.
+
+```js
+class Child extendsParent {
+    constructor(a, b, c) {
+        super(a, b);
+        this._c = c;
+    }
+
+    // .. other methods
+}
+```
+
