@@ -207,7 +207,7 @@ class Child extendsParent {
 
 ## Implementing Modules using ES6 Syntax
 
-Article on implementing modules in a browser’s runtime environment using ES6 modules syntax.
+Article on implementing modules in a browser’s runtime environment using ES6 modules syntax. The link to the full article can be found [here](https://www.codecademy.com/paths/full-stack-engineer-career-path/tracks/fscp-22-javascript-syntax-part-iii/modules/wdcp-22-learn-javascript-syntax-modules/articles/implementing-modules-using-es-6-syntax).
 
 ### What are Modules?
 
