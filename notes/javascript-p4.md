@@ -784,3 +784,81 @@ In this article, you have learned the following:
 - How to export and import a default value.
 
 Though this article covers the basics of using ES6 syntax to import and export modules, [MDN has an excellent article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) that provides an in-depth look at some additional features that ES6 has to offer.
+
+## Implementing Modules using ES6 Syntax (Summarized)
+
+In JavaScript, modules can be implemented for the purpose of reusing functions across different sections of code. 
+
+The intended module will be a JavaScript file contained in a `modules/` directory.
+
+The module should contain various functions & have a general format as follows:
+
+```js
+const add2 = number => {
+  return number + 2;
+}
+
+const modulus = number => {
+  return Math.abs(number);
+}
+
+export { add2, modulus };
+```
+
+Notice the last line in the module: `export { add2, modulus };`. This is referred to as "named import syntax" in ES6 syntax. 
+
+Alternatively, the "default export" syntax also works, where a single value is used to represent the entire module. The default export value is an object containing the entire set of functions and/or data values of a module.
+
+```js
+const add2 = number => {
+  return number + 2;
+}
+
+const modulus = number => {
+  return Math.abs(number);
+}
+
+const resources = {
+  add2, modulus
+}
+
+// any of the below 2 exports works
+export default resources;
+export { resources as default };
+```
+
+Exporting resources has been covered, but we can only really use resources by importing it to files to use it.
+
+If the module has utilized _named import syntax_, we import it as follows:
+
+```js
+// This is in another file, where we arre using the resources in the module.
+
+import { exportedResourceA, exportedResourceB } from 'pathToModule';
+
+// ...
+```
+
+But if the module instead utilized _default export_, we import it as follows:
+
+```js
+// This is in another file, where we arre using the resources in the module.
+
+// This will work
+import importedResources from 'module.js';
+const { valueA, valueB } = resources;
+
+// This will not work
+import { valueA, valueB } from 'module.js'
+
+// ...
+```
+
+Here are several tips for these import/export syntax:
+- Note that we cannot apply a similar syntax as we did for _named import syntax_ here, as we will need to import the object first and then extract the values inside. This is done so because the `default export` is an object. There are cases when the `default export` may just be a single function, in which case, the `import importedResources from 'module.js';`
+
+- `import importedResources from 'module.js';` is short for `import { default as importedResources } from 'module.js`
+
+- The imported default value may be given any name the programmer chooses, so `import `**`importedResources`**` from 'module.js';` or `import `**`domFunctions`**` from 'module.js';` works!
+
+
