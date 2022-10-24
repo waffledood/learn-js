@@ -789,7 +789,20 @@ Though this article covers the basics of using ES6 syntax to import and export m
 
 In JavaScript, modules can be implemented for the purpose of reusing functions across different sections of code. 
 
-The intended module will be a JavaScript file contained in a `modules/` directory.
+**Setup**
+
+> The intended module will be a JavaScript file (`.mjs` extension) contained in a `modules/` directory. The file(s) referencing/using the resources from the module also needs to have a `.mjs` extension. This setup is needed if modules are to be used in a NodeJS runtime environment.
+
+> If the modules will be used in a web browser runtime environment instead, then the JavaScript files will instead use the `.js` extension. The `HTML` document referencing the JavaScript file however will need to be written as such: 
+
+```html
+<script type="module" src="./main.js"></script>
+```
+
+These links were helpful:
+- [StackOverflow](https://stackoverflow.com/a/69899085/15781733)
+- [Stanley Ulili's article](https://www.stanleyulili.com/node/node-modules-import-and-use-functions-from-another-file/#:~:text=To%20include%20functions%20defined%20in%20another%20file%20in%20Node.,functions%20using%20the%20dot%20notation.)
+- [Medium -- How to use the "import" statement in Node.js](https://javascript.plainenglish.io/how-to-use-the-import-statement-in-node-js-d43ce83e5b44#:~:text=Using%20%E2%80%9C.mjs%E2%80%9D%20extension)
 
 The module should contain various functions & have a general format as follows:
 
